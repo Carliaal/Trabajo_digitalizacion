@@ -1,8 +1,14 @@
 # Trabajo digitalizacion
 
-Carla García Pacheco(Carliaal)
+## Miembros del grupo
+|Primer miembro| Segundo miembro| Tercer miembro|
+|--|--|--|
+|Carla García Pacheco [@Carliaal](https://github.com/Carliaal/Trabajo_digitalizacion)|
 
+## Índice
 - [Trabajo digitalizacion](#trabajo-digitalizacion)
+  - [Miembros del grupo](#miembros-del-grupo)
+  - [Índice](#índice)
   - [1. Supuesto elegido](#1-supuesto-elegido)
     - [Problema B](#problema-b)
   - [2. Identificación del Modelo de Servicio Adecuado](#2-identificación-del-modelo-de-servicio-adecuado)
