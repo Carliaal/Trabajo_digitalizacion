@@ -4,6 +4,7 @@
 |Primer miembro| Segundo miembro| Tercer miembro|
 |--|--|--|
 |Carla García Pacheco [@Carliaal](https://github.com/Carliaal/Trabajo_digitalizacion)|
+|Rodrigo García Delgado [@Rodrigo-44](https://github.com/Carliaal/Trabajo_digitalizacion)|
 
 ## Índice
 - [Trabajo digitalizacion](#trabajo-digitalizacion)
@@ -86,216 +87,142 @@ En resumen, PaaS es la mejor opción si el usuario necesita un entorno de trabaj
 
 ## 3. Investigación de Plataformas
 
-### 3.1. Plataformas que ofrecen soluciones para PaaS
+### 3.1. Google App Engine
 
-Estas son algunas de las mejores plataformas para abordar soluciones para PaaS (Plataforma como Servicio). La plataforma como Heroku es ideal para principiantes o proyectos pequeños. Para empresas con necesidades más avanzadas, Google App Engine o AWS Elastic Beanstalk son excelentes opciones y por último, si se requiere flexibilidad empresarial y un enfoque en Kubernetes, Red Hat OpenShift es la mejor alternativa.
+#### Explicación:
 
-#### 3.1.1. Google App Engine
+Google App Engine (GAE) es una Plataforma como Servicio (PaaS) que permite a los desarrolladores desplegar aplicaciones web y móviles sin preocuparse por la infraestructura subyacente, ya que Google gestiona automáticamente los servidores, el escalado y el balanceo de carga.
+Ofrece dos entornos: estándar, optimizado para aplicaciones ligeras con recursos limitados y tiempos de ejecución predefinidos, y flexible, que admite contenedores Docker personalizables para mayor flexibilidad.
+Soporta lenguajes como Python, Java, Node.js, PHP y Go, además de integrarse con herramientas de Google Cloud como Cloud SQL (PostgreSQL/MySQL), Firestore y BigQuery.
+GAE escala automáticamente según el tráfico, facilita la gestión de versiones y despliegues continuos, y garantiza alta disponibilidad con certificados SSL/TLS. Con un modelo de pago por uso, es ideal para startups y empresas que buscan lanzar aplicaciones rápidamente, aunque puede resultar costoso en proyectos intensivos y depende del ecosistema de Google. 
+Su implementación es sencilla gracias al Google Cloud SDK y un flujo de despliegue bien documentado que permite a los desarrolladores enfocarse en el código sin preocuparse por el mantenimiento de la infraestructura.
 
-#### Características:
+#### Características a destacar:
 
-- Compatible con lenguajes como Python, Java, Node.js, PHP, Go y más.
-- Escalado automático según la demanda.
-- Integración nativa con servicios de Google Cloud como Cloud (PostgreSQL).
-- Ideal para aplicaciones basadas en microservicios.
-
-#### Costes:
-
-- Nivel gratuito: Incluye 28 horas/vCPU por día y 1 GB de almacenamiento.
-- Precios escalables en función del uso, empezando por $0.046/vCPU-hora.
-
-#### Facilidad de implementación:
-
-- Documentación clara y una interfaz de usuario intuitiva.
-- Opciones avanzadas para configuraciones personalizadas, pero puede requerir conocimientos básicos de Google Cloud Platform.
-
-#### 3.1.2. Heroku
-
-#### Características:
-
-- Compatible con múltiples lenguajes de programación y frameworks (Ruby Python, Java, Node.js, Scala, etc.).
-- Ofrece "addons" para integrar herramientas como bases de datos, cachés y monitoreo.
-- Escalado fácil mediante el sistema de "dynos".
-
-#### Costes:
-
-- Nivel gratuito: Incluye 550-1,000 horas al mes con 512 MB de RAM.
-- Planes de pago desde $7/mes por un dyno estándar.
+##### Compatibilidad multilenguaje: 
+- Soporta lenguajes como Python, Java, Node.js, PHP, Ruby, Go y .NET. También permite usar entornos personalizados mediante contenedores Docker.
+##### Escalado automático: 
+- La plataforma ajusta los recursos (CPU, memoria) según el tráfico en tiempo real. Esto garantiza alta disponibilidad y rendimiento eficiente, especialmente en aplicaciones con tráfico variable.
+##### Monitoreo y diagnóstico:
+- Herramientas como Google Cloud Console y Cloud Monitoring permiten supervisar el rendimiento, identificar problemas y optimizar aplicaciones.
+##### Entornos de ejecución:
+- Entorno estándar: Diseñado para aplicaciones ligeras con requisitos predefinidos, tiempos de ejecución cortos y alta eficiencia.
+- Entorno flexible: Ofrece mayor personalización, sin restricciones de tiempo de ejecución, y utiliza contenedores Docker personalizables.
+##### Integración con Google Cloud: 
+- Integra servicios como Cloud SQL (bases de datos PostgreSQL/MySQL), Cloud Storage (almacenamiento), BigQuery (análisis de datos), y herramientas de inteligencia artificial de Google.
 
 #### Facilidad de implementación:
 
-- Muy sencilla para desarrolladores, con un enfoque minimalista.
-- Despliegue directo mediante Git y una curva de aprendizaje muy baja.
+Google App Engine permite a las empresas implementar aplicaciones de manera rápida y eficiente, eliminando la necesidad de gestionar servidores o infraestructura. Ofrece escalabilidad automática, integración con bases de datos y herramientas empresariales, alta disponibilidad y seguridad. Es ideal para aplicaciones internas, sistemas empresariales o plataformas con tráfico variable, optimizando costos y tiempo de desarrollo gracias a su facilidad de configuración y soporte para múltiples lenguajes.
 
-#### 3.1.3. Red Hat OpenShift
+### 3.2. Heroku
+
+#### Explicación:
+
+Heroku es una plataforma como servicio (PaaS) diseñada para simplificar el desarrollo, despliegue y gestión de aplicaciones en la nube. Lanzada inicialmente en 2007, Heroku se enfoca en permitir a los desarrolladores centrarse exclusivamente en la construcción y mejora de sus aplicaciones sin preocuparse por la infraestructura subyacente, como servidores, redes o configuraciones complejas.
+Heroku opera sobre una arquitectura basada en contenedores llamada Dynos, que son entornos ligeros y escalables donde se ejecutan las aplicaciones. Los desarrolladores suben su código al sistema de Heroku, y la plataforma se encarga de todo lo demás, desde la instalación de dependencias hasta el aprovisionamiento de recursos. 
+Además, soporta una variedad de lenguajes populares como Ruby, Python, Java, Node.js, PHP, Scala, Go, y más, lo que lo convierte en una solución flexible para diferentes tipos de proyectos.
+Es especialmente conocido por su facilidad de uso y su enfoque en la experiencia del desarrollador, ofreciendo herramientas intuitivas, un flujo de integración y despliegue continuo (CI/CD) eficiente y una gran cantidad de complementos para ampliar las capacidades de las aplicaciones. Heroku es utilizado tanto por startups como por grandes empresas gracias a su capacidad de escalado dinámico y su modelo de precios accesible.
 
 #### Características:
 
-- Basado en Kubernetes, enfocado en aplicaciones empresariales y microservicios.
-- Compatible con PostgreSQL y otras bases de datos.
-- Ofrece integración con CI/CD para despliegues continuos.
+##### Soporte para múltiples lenguajes de programación: 
 
-#### Costes:
+-  Ruby (su lenguaje original). 
+- Node.js, Python, Java, PHP, Go, y Scala.
 
-- Planes a partir de $50/mes por desarrollador (plataforma online).
-- OpenShift Origin (versión gratuita) disponible para instalaciones locales.
+##### Arquitectura basada en Dynos
+
+- Los Dynos son contenedores ligeros que ejecutan las aplicaciones en Heroku.
+- Escalables automáticamente o de forma manual según la demanda.
+- Diferentes tipos de Dynos permiten ajustar los recursos a las necesidades de la aplicación, desde Dynos gratuitos hasta opciones más robustas para producción.
+
+##### Despliegue sencillo y automatizado
+
+- Los desarrolladores pueden desplegar aplicaciones con un solo comando (git push heroku main) gracias a la integración con Git.
+- Compatible con flujos de trabajo CI/CD, integrándose con herramientas como GitHub Actions, Jenkins, y CircleCI.
+
+##### Complementos y extensiones 
+
+- Heroku ofrece una gran variedad de complementos en su Heroku Elements Marketplace para añadir funcionalidades como bases de datos, análisis de rendimiento, monitoreo o caché. Algunos ejemplos:
+- Heroku Postgres: Base de datos relacional en la nube.
+- Redis: Almacenamiento en memoria para caché y sesiones.
+- Papertrail: Herramienta de monitoreo de logs.
+
+##### Escalabilidad sencilla
+
+- Heroku permite escalar aplicaciones de forma horizontal (añadiendo más Dynos) o vertical (aumentando los recursos por Dyno) con unos pocos clics o comandos.
+- Esto lo hace ideal para aplicaciones con tráfico variable o picos inesperados.
+
+##### Integración con servicios externos 
+
+- Heroku se conecta fácilmente con servicios en la nube como Amazon Web Services (AWS), Google Cloud, y Microsoft Azure.
+- Compatible con bases de datos externas y APIs de terceros.
+
+##### Herramientas de monitoreo y diagnóstico 
+
+- Heroku Metrics proporciona estadísticas detalladas sobre el rendimiento de las aplicaciones, como tiempo de respuesta, uso de memoria y CPU.
+- Logs en tiempo real para identificar problemas y depurar errores rápidamente.
+
+##### Herramientas de monitoreo y diagnóstico  
+
+- Heroku gestiona parches de seguridad y actualizaciones de software automáticamente.
+- Cumple con estándares como PCI DSS, HIPAA, y ISO/IEC 27001.
+
+#### Facilidad de implementación:
+
+Heroku, como plataforma PaaS, permite a las empresas implementar aplicaciones rápidamente sin preocuparse por la infraestructura. 
+Su escalabilidad automática, soporte para múltiples lenguajes y fácil integración con herramientas como bases de datos y monitoreo lo hacen ideal para proyectos empresariales. Facilita el trabajo con flujos CI/CD, asegura alta disponibilidad y optimiza costos mediante su modelo de pago por uso, siendo perfecto para aplicaciones dinámicas y de rápida evolución.
+
+#### 3.3. AWS Elastic Beanstalk
+
+#### Explicación:
+
+AWS Elastic Beanstalk es un servicio PaaS que facilita el despliegue y gestión de aplicaciones web en la nube. Permite a los desarrolladores subir su código, y la plataforma se encarga de configurar automáticamente la infraestructura necesaria, incluyendo servidores, balanceadores de carga y escalado automático.
+Compatible con lenguajes como Java, .NET, Node.js, Python y Docker, ofrece integración con otros servicios de AWS y acceso a los recursos subyacentes para mayor control. Su modelo escalable y de pago por uso lo hace ideal para aplicaciones dinámicas y de rápido crecimiento.
+
+#### Características:
+
+##### Despliegue sencillo y automatizado
+
+- Elastic Beanstalk simplifica el despliegue al permitir a los desarrolladores cargar su código y dejar que la plataforma gestione automáticamente la configuración de infraestructura, red, y servidores necesarios.
+
+##### Soporte para Múltiples Lenguajes
+
+- Compatible con lenguajes y entornos populares como: Java, .NET, Node.js, Python, Ruby, PHP, Go, y Docker.
+- Ofrece plantillas preconfiguradas para cada entorno, facilitando el inicio rápido de proyectos.
+
+##### Gestión de Infraestructura
+
+- Proporciona y configura automáticamente recursos como:
+- - Instancias EC2 (servidores virtuales).
+- - Balanceadores de carga para distribuir el tráfico.
+- - Auto Scaling para ajustar los recursos según la demanda.
+- - Almacenamiento S3 para archivos estáticos y datos.
+
+##### Escalabilidad Automática
+
+- Escala horizontalmente (añadiendo más servidores) o verticalmente (mejorando la capacidad de cada servidor) en función de la carga de trabajo.
+- Garantiza que la aplicación pueda manejar picos de tráfico sin intervención manual.
+
+##### Monitoreo y Métricas
+
+- Integrado con Amazon CloudWatch, permite rastrear el rendimiento de la aplicación, como:
+- - Uso de CPU, memoria, tráfico de red, y errores.
+- - Alertas configurables para eventos críticos.
+
+#####  Integración con otros servicios de AWS
+
+- Funciona perfectamente con:
+- - Amazon RDS para bases de datos relacionales.
+- - Amazon DynamoDB para bases de datos NoSQL.
+- - Amazon S3 para almacenamiento de objetos.
+- - AWS Lambda para funciones serverless adicionales.
 
 #### Facilidad de implementación:
 
 - Más técnica que Heroku, requiere conocimientos básicos de contenedores y Kubernetes.
 - Ideal para equipos con experiencia técnica avanzada.
-
-#### 3.1.4. Microsoft Azure App Service
-
-#### Características:
-
-- Soporte para múltiples lenguajes y frameworks (Python, .NET, Node.js, PHP, etc.).
-- Integración con servicios de Azure como bases de datos, IA y DevOps.
-- Escalado automático y balanceo de carga.
-
-#### Costes:
-
-- Plan gratuito con 1 GB de almacenamiento.
-- Precios desde $0.013/hora por instancias básicas.
-
-#### Facilidad de implementación:
-
-- Documentación completa y soporte robusto.
-- Requiere conocimientos de Azure, pero es accesible para desarrolladores experimentados.
-
-#### 3.1.5. AWS Elastic Beanstalk
-
-#### Características:
-
-- Compatible con lenguajes como Java, Python, PHP, Ruby, Node.js, y .NET.
-- Gestión automatizada de infraestructura, incluida escalabilidad y monitoreo.
-- Amplia integración con otros servicios de AWS como RDS (PostgreSQL).
-
-#### Costes:
-
-- Gratis en el nivel AWS Free Tier (750 horas al mes durante el primer año).
-- Los costos dependen de los recursos subyacentes (EC2, S3, RDS, etc.).
-
-#### Facilidad de implementación:
-
-- Muy flexible, pero puede ser abrumador para principiantes.
-- Ofrece una experiencia de "configuración y olvido" para quienes ya trabajan con AWS.
-
-#### Comparativa de plataformas:
-
-A continuación veremos una tabla, a modo resumen, destanco las caracteriasticas mas relevantes para las empresas.
-
-#### Comparativa de plataformas
-
-|      Plataforma       | Facilidad de implementación | Costes iniciales | Escalabilidad | Soporte para PostgreSQL |
-| :-------------------: | :-------------------------: | :--------------: | :-----------: | :---------------------: |
-|   Google App Engine   |            Alta             |       Bajo       |     Alta      |           Sí            |
-|        Heroku         |          Muy Alta           |       Bajo       |     Media     |           Sí            |
-|   Red Hat OpenShift   |            Media            |      Medio       |   Muy alta    |           Sí            |
-|    Microsoft Azure    |            Alta             |       Bajo       |     Alta      |           Sí            |
-| AWS Elastic Beanstalk |            Media            |       Bajo       |   Muy alta    |           Sí            |
-
-### 3.2. Mejores Plataformas
-
-En este apartado hemos destacado las mejores plataformas que ofrecen soluciones PaaS (Plataforma como Servicio), para que tu como empresa no tengas la necesidad de estar investigando. A continuación veras las mejores opciones detalladas y con sus características. También veremos algunas desventajas para que sean ustedes como empresa los que tomen la decisión de elegir la Plataforma como Servicio.
-
-#### 3.2.1. Google App Engine
-
-#### Características destacadas:
-
-- Entorno completamente administrado: No necesitas preocuparte por el aprovisionamiento ni la gestión de servidores. Todo el escalado, actualizaciones y balanceo de carga se manejan automáticamente.
-- Lenguajes soportados: Admite Python, Java, Node.js, PHP, Ruby, Go y .NET. También permite personalizar entornos a través de contenedores Docker.
-- Integración con Google Cloud: Compatible con Cloud SQL (PostgreSQL), BigQuery, Cloud Storage y otras soluciones del ecosistema de Google.
-- Alta disponibilidad: Ofrece escalabilidad automática y despliegues regionales para garantizar el rendimiento incluso con picos de demanda.
-
-#### Ventajas destacadas:
-
-- Tiempo de configuración reducido gracias a sus herramientas de desarrollo listas para usar.
-- Escalado automático y precios flexibles basados en el uso real.
-- Excelente para empresas que ya utilizan otros servicios de Google Cloud.
-
-#### Desventaja:
-
-- Dependencia del ecosistema de Google Cloud, lo que puede dificultar la migración a otra plataforma.
-- Configuración avanzada (como entornos personalizados) puede ser compleja.
-
-#### Costes:
-
-- Nivel gratuito: 28 horas/vCPU diarias y 1 GB de almacenamiento, ideal para pruebas o aplicaciones pequeñas.
-- Costes adicionales:
-- - $0.046/vCPU-hora.
-- - $0.12/GB-mes de almacenamiento.
-
-#### Facilidad de implementación:
-
-- Documentación robusta y fácil de seguir.
-- Despliegue simplificado mediante herramientas como el SDK de Google Cloud.
-- Ideal para desarrolladores con conocimientos básicos de cloud computing.
-
-#### 3.2.2. Heroku
-
-#### Características destacadas:
-
-- Plataforma centrada en desarrolladores: Diseñada para facilitar el despliegue, gestión y escalado de aplicaciones de forma sencilla.
-- Soporte multilenguaje: Compatible con Ruby, Python, Java, Node.js, Scala, Clojure, PHP y Go.
-- Extensible con "addons": Integra herramientas como bases de datos PostgreSQL, cachés (Redis), almacenamiento y herramientas de monitoreo como New Relic.
-- Despliegue simple: Los desarrolladores pueden desplegar aplicaciones directamente desde Git con comandos simples.
-
-#### Ventajas destacadas:
-
-- Curva de aprendizaje muy baja, ideal para desarrolladores nuevos o equipos pequeños.
-- Implementación extremadamente rápida.
-- Amplia gama de "addons" que permiten agregar funcionalidades avanzadas sin complejidad.
-
-#### Desventaja:
-
-- Costos más altos en comparación con otras plataformas a medida que el proyecto crece.
-- Menor control y flexibilidad en la configuración avanzada en comparación con plataformas más técnicas.
-
-#### Costes:
-
-- Nivel gratuito: Entre 550 y 1,000 horas de procesamiento mensuales, con 512 MB de RAM.
-- Planes de pago:
-- - Dynos estándar: Desde $7/mes.
-- - Bases de datos PostgreSQL: Desde $9/mes para bases básicas.
-
-#### Facilidad de implementación:
-
-- Muy alta: Documentación clara y herramientas integradas para desarrolladores.
-- Despliegue automatizado y configuración mínima.
-- Ideal para equipos pequeños o proyectos con plazos ajustados.
-
-#### 3.2.3. Red Hat OpenShift
-
-#### Características destacadas:
-
-- Basado en Kubernetes: Ofrece contenedores administrados y listos para su uso. Permite crear aplicaciones escalables y portátiles.
-- Multinube: Puede ejecutarse en la nube pública (AWS, Azure, Google Cloud) o en instalaciones locales.
-- Integración con CI/CD: Incluye herramientas de integración y entrega continua para procesos de desarrollo ágiles.
-- Amplio soporte empresarial: Ideal para organizaciones grandes que requieren alta disponibilidad y soporte técnico robusto.
-
-#### Ventajas destacadas:
-
-- Flexibilidad y control total sobre el entorno, con soporte nativo para PostgreSQL.
-- Integración avanzada con sistemas empresariales y soluciones de contenedores.
-- Escalado horizontal y vertical, ideal para aplicaciones críticas.
-
-#### Desventaja:
-
-- Requiere conocimientos técnicos avanzados en contenedores y Kubernetes.
-- Costos más altos que otras plataformas si no se utiliza adecuadamente.
-
-#### Costes:
-
-- OpenShift Online (público): $50/mes por desarrollador.
-- OpenShift Self-Managed (on-premise): Costos dependen del tamaño del clúster y los recursos necesarios.
-- Versión gratuita: OpenShift Origin, adecuada para pruebas en entornos locales.
-
-#### Facilidad de implementación:
-
-- Media: La configuración inicial puede ser técnica, pero está bien documentada.
-- Ideal para desarrolladores o equipos con experiencia en Kubernetes.
-- Amplia comunidad de soporte y recursos para aprendizaje.
 
 #### Comparativa de plataformas
 
@@ -305,10 +232,164 @@ En este apartado hemos destacado las mejores plataformas que ofrecen soluciones 
 |      Heroku       |    Sencillez y rapidez de despliegue    | Muy alta  |     Bajo      | Proyectos pequeños/medianos con poco tiempo de implementación. |
 | Red Hat OpenShift |   Potencia y flexibilidad empresarial   |   Medio   |     Medio     |        Empresas grandes con experiencia en Kubernetes.         |
 
-#### Pequeña Conclusión:
-
-Heroku es una excelente opción para una implementación rápida. Si se necesita escalabilidad avanzada, Google App Engine es más adecuado. Red Hat OpenShift destaca si el enfoque está en aplicaciones críticas y con equipos técnicos robustos.
 
 ## 4. Análisis Económico
+
+### 4.1. Google App Engine
+
+#### Precios de Google App Engine
+Google App Engine utiliza un modelo de pago por uso, lo que significa que solo pagas por los recursos que consume tu aplicación. Además, incluye un nivel gratuito para que puedas desarrollar, probar o ejecutar aplicaciones ligeras sin incurrir en costos.
+
+#### Nivel gratuito
+- Tiempo de CPU (vCPU): 28 horas/vCPU al día.
+- Memoria: 128 MB de RAM por instancia gratuita.
+- Almacenamiento: 1 GB de espacio en base de datos Cloud Datastore o Firestore.
+- Transferencia de datos: Hasta 1 GB de salida al mes.
+- Ideal para aplicaciones de prueba o proyectos pequeños con bajos volúmenes de tráfico.
+
+#### Precios de recursos adicionales
+
+- Tiempo de CPU (vCPU): $0.046 por hora de CPU utilizada.
+- Memoria (RAM): $0.00624 por GB-hora.
+- Almacenamiento: Bases de datos (Cloud SQL, Firestore, etc.): $0.12 por GB/mes
+Almacenamiento persistente (Cloud Storage): $0.026 por GB/mes.
+- Transferencia de datos (Red): 
+-- Entrada de datos (hacia App Engine): Gratuita.
+-- Salida de datos (desde App Engine):
+--- Dentro de la misma región: $0.01 por GB.
+--- A otras regiones o a Internet: $0.12 por GB.
+
+#### Ejemplo de costos típicos (Práctico)
+
+##### Aplicación web pequeña (bajo tráfico):
+
+- 10 vCPU-horas al día: $0.46/día (~$13.8/mes).
+- 10 GB de almacenamiento: $1.2/mes.
+- Transferencia de datos: 5 GB de salida (~$0.60/mes).
+- Costo total aproximado: $15.6/mes.
+
+##### Aplicación web de tamaño mediano (tráfico moderado):
+
+- 50 vCPU-horas al día: $2.3/día (~$69/mes).
+- 50 GB de almacenamiento: $6/mes.
+- Transferencia de datos: 25 GB de salida (~$3/mes).
+- Costo total aproximado: $78/mes.
+
+##### Aplicación grande (alto tráfico y entorno flexible):
+
+- 500 vCPU-horas al día: $23/día (~$690/mes).
+- 200 GB de almacenamiento: $24/mes.
+- Transferencia de datos: 500 GB de salida (~$60/mes).
+- Costo total aproximado: $774/mes.
+
+### 4.2. Heroku 
+
+##### Precios de Heroku
+ 
+Heroku ofrece un modelo de precios flexible, adaptado a diferentes tipos de aplicaciones y necesidades, desde proyectos pequeños hasta soluciones empresariales. 
+Los costos dependen del tipo de Dyno (contenedores virtuales) que utilices, el número de Dynos necesarios y los complementos adicionales que integres en tu aplicación.
+
+##### Planes para Dynos
+
+###### Dynos Gratis
+
+- Costo: $0/mes.
+- Características:
+- Adecuado para proyectos pequeños o de prueba.
+- Hasta 550-1,000 horas mensuales (según la verificación de la cuenta).
+- Se "duerme" automáticamente después de 30 minutos de inactividad y requiere un reinicio.
+- Incluye 1,000 solicitudes de base de datos por mes en Heroku Postgres.
+
+###### Dynos Hobby
+
+- Costo: $7/mes por Dyno.
+- Características:
+- - Perfecto para proyectos personales en producción. 
+- - No se duerme con inactividad.
+- - Soporte para SSL y nombres de dominio personalizados.
+
+###### Dynos Standard
+
+- Standard-1X: $25/mes por Dyno.
+- Standard-2X: $50/mes por Dyno.
+- Características:
+- - Ideal para aplicaciones de producción con tráfico moderado.
+- - Escalabilidad horizontal con más Dynos.
+- - Alto tiempo de actividad.
+
+###### Dynos Performance
+
+- Performance-M: $250/mes por Dyno.
+- Performance-L: $500/mes por Dyno.
+- Características:
+- - Diseñados para aplicaciones empresariales de alta demanda.
+- - Rendimiento superior y capacidades avanzadas.
+- - Menor latencia y soporte para gran cantidad de solicitudes simultáneas.
+
+###### Dynos Enterprise
+
+- Precios personalizados según las necesidades de la empresa.
+- Incluyen soporte dedicado, mayor capacidad de escalado y cumplimiento normativo avanzado.
+
+##### Complementos
+
+###### Heroku Postgres (Base de datos relacional):
+
+- Plan gratuito: Incluye 10,000 filas y 20 conexiones máximas.
+- Plan pagado: Desde $9/mes hasta $3,500/mes, dependiendo de la capacidad de almacenamiento y rendimiento.
+
+###### Redis (Caché en memoria):
+
+- Gratis: Hasta 25 MB de almacenamiento.
+- Plan pagado: Desde $15/mes hasta $750/mes para aplicaciones empresariales.
+
+###### Papertrail (Logs):
+
+- Gratis: Retención de logs de 7 días.
+- Plan pagado: Desde $7/mes con mayores capacidades de almacenamiento y análisis.
+
+### 4.3. Google App Engine
+
+#### Instancias EC2 (Cómputo)
+
+EC2 permite a los usuarios alquilar computadores virtuales, llamadas instancias EC2, en la nube de AWS.
+
+- Costo: Varía según el tipo de instancia, región y uso.
+- Por ejemplo, una t2.micro (uso general) cuesta ($8.35/mes si se usa continuamente).
+- Puedes optar por instancias bajo demanda, reservadas o de spot para ajustar los costos.
+
+#### Almacenamiento S3
+
+Se utiliza para almacenar archivos estáticos o datos relacionados con la aplicación.
+- Costo: $0.023/GB al mes para los primeros 50 TB almacenados.
+- Transferencias de datos a S3 son gratuitas dentro de AWS.
+
+#### Balanceadores de Carga (ELB)
+
+Elastic Beanstalk utiliza balanceadores de carga para distribuir el tráfico entre instancias.
+- Costo: $0.025 por hora, más $0.008 por GB transferido.
+
+#### Bases de Datos RDS
+
+Si se requiere una base de datos relacional, Elastic Beanstalk puede aprovisionarla automáticamente.
+Costo: Desde ($7.44/mes), dependiendo del tipo de instancia y almacenamiento.
+
+#### Escalabilidad Automática
+
+Elastic Beanstalk puede escalar instancias automáticamente según la carga.
+- Costo: Proporcional al número de instancias adicionales lanzadas durante los picos de tráfico.
+
+#### Transferencia de Datos
+
+Los datos transferidos entre servicios de AWS dentro de la misma región son gratuitos.
+- Costo de datos salientes:
+- - Primer GB por mes: Gratis.
+- - Resto: $0.09/GB para los primeros 10 TB al mes.
+
+#### Herramientas Opcionales
+
+Elastic Beanstalk puede integrarse con otros servicios que tienen costos adicionales, como:
+- CloudWatch Logs: Desde $0.50 por GB almacenado.
+- Route 53 (DNS): $0.50 por zona al mes.
 
 ## 5. Conclusión
