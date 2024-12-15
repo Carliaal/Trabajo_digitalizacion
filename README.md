@@ -92,6 +92,8 @@
       - [Transferencia de Datos](#transferencia-de-datos)
       - [Herramientas Opcionales](#herramientas-opcionales)
   - [5. Conclusión](#5-conclusión)
+  - [6. Webgrafía y otros enlaces](#6-webgrafía-y-otros-enlaces)
+  - [6.1 NOTA](#61-nota)
 
 ## 1. Supuesto elegido
 
@@ -479,6 +481,17 @@ El modelo PaaS (Plataforma como Servicio) es la mejor opción para las empresas 
 
 Ambas plataformas permiten un modelo de pago por uso, por lo que puede adaptarlo fácilmente a las necesidades de su proyecto, pero es importante realizar un análisis de costos basado en el acceso al tráfico y las necesidades de las aplicaciones. En definitiva, PaaS es la solución más eficaz para este tipo de proyectos. Tanto Google App Engine como Heroku son excelentes opciones y la elección dependerá de la complejidad del proyecto y la experiencia técnica del equipo.
 
+## 6. Webgrafía y otros enlaces
+1. **ENLACE PRESENTACIÓN:** [Enlace canva](https://www.canva.com/design/DAGZStUlo2A/jAjl9vrAKkgoDXUBmcFkwQ/edit)
+2. **TIPOS DE SERVICIO EN LA NUBE:** [arsys](https://www.arsys.es/blog/que-es-iaas-saas-paas-faas-caas-te-explicamos-en-que-consisten-los-diferentes-servicios-de-la-nube)
+3. **PaaS:** [Microsoft](https://azure.microsoft.com/es-es/resources/cloud-computing-dictionary/what-is-paas)
+4. **Google App Engine:** [Cloud Google](https://cloud.google.com/appengine?hl=es-419)
+5. **Heroku:** [Heroku](https://www.heroku.com/?utm_source=google&utm_medium=paid_search&utm_campaign=emea_heraw&utm_content=general-branded-search-rsa&utm_term=heroku&utm_source_platform=GoogleAds&gad_source=1&gclid=CjwKCAiAmfq6BhAsEiwAX1jsZ60HrF5my2nORjwJiwccQ1PnxLtFrQ6dFwwmKrC1K_mrUPL3aINsdRoCJb0QAvD_BwE)
+6. **AWS Elastic Beanstalk:** [Amazon](https://aws.amazon.com/es/elasticbeanstalk/?trk=3f9fabd5-1409-48b0-a0d7-eed573be21d0&sc_channel=ps&ef_id=CjwKCAiAmfq6BhAsEiwAX1jsZ7zfrqF28NxWJfc8HA7bu9RgG_PmxpWgL0UUV14xShhTvBlvRGAcDxoCUTwQAvD_BwE:G:s&s_kwcid=AL!4422!3!651612449174!e!!g!!elastic%20beanstalk!19835790842!148728882204&gclid=CjwKCAiAmfq6BhAsEiwAX1jsZ7zfrqF28NxWJfc8HA7bu9RgG_PmxpWgL0UUV14xShhTvBlvRGAcDxoCUTwQAvD_BwE)
+7. **Red Hat OpenShift:** [Red Hat](https://www.redhat.com/en/technologies/cloud-computing/openshift)
+
+## 6.1 NOTA
+Utilizamos más páginas para contrastar información pero desgraciadamente no guardamos correctamente los enlaces por lo que no pudimos añadirlas a nuestro trabajo. 
 
 
 
